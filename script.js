@@ -1,8 +1,12 @@
-while(1) {
-    document.getElementById('tentativo').innerHTML="arrivederci";
-    setTimeout(() => {
-        document.getElementById('tentativo').innerHTML="ciao"
-    }, 2000);
-}
+function loop() {
+    while(1) {
+        setTimeout(() => {
+            document.getElementById('tentativo').textContent="ciao"
+        }, 2000);
+        setTimeout(() => {
+            document.getElementById('tentativo').textContent="arrivederci"
+        }, 2000);
+    }
+};
 
-
+window.onload = loop();
