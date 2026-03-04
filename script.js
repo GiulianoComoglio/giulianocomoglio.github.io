@@ -4,10 +4,12 @@ let texts = ["prova", "fatto"];
 
 let count = 0;
 
-let text = texts[count];
+let text = "";
 
 setInterval(
     () => {
         count = !count;
+        text = texts[count];
     }, 1000
+    
 );
