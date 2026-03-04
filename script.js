@@ -11,8 +11,7 @@ div1.innerHTML = text;
 while (1) {
     setInterval(
         () => {
-            count += 1;
-            count = count % 2;
+            count = !count;
         }, 1000
     )
 };
