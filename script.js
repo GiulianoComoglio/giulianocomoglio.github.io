@@ -4,13 +4,10 @@ let texts = ["prova", "fatto"];
 
 let count = 0;
 
-let text = "";
-
 window.onload = setInterval(
     () => {
         count += 1;
-        count = count % 2;
-        text = texts[count];
-        div1.innerHTML = text;
+        count = count % 2; 
+        div1.innerHTML = texts[count];
     }, 1000
 );
