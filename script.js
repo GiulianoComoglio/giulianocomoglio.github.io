@@ -1,4 +1,4 @@
-let div1 = document.getElementById('div1');
+let div1 = document.getElementById("div1");
 
 
 let texts = ["prova", "fatto"];
