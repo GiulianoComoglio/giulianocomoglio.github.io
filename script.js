@@ -6,7 +6,7 @@ while(1) {
     setInterval(
         () => {
             div1.innerHTML = "fatto"
-        }, 2000
+        }, 4000
     );
     setInterval(
         () => {
