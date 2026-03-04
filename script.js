@@ -6,11 +6,8 @@ let count = 0;
 
 let text = texts[count];
 
-do {
-    setInterval(
-        () => {
-            count = !count;
-        }, 1000
-    );
-    div1.innerHTML = text;
-} while(true);
+setInterval(
+    () => {
+        count = !count;
+    }, 1000
+);
