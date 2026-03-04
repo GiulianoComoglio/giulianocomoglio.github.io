@@ -1,16 +1,19 @@
 let div1 = document.getElementById('div1');
 
-div1.innerHTML = "prova";
 
-while(1) {
+let texts = ["prova", "fatto"]
+
+let count = 0
+
+let text = texts[count]
+
+div1.innerHTML = text;
+
+while (1) {
     setInterval(
         () => {
-            div1.innerHTML = "fatto"
-        }, 4000
-    );
-    setInterval(
-        () => {
-            div1.innerHTML = "prova"
-        }, 2000
-    );
-};
+            count += 1;
+            count = count % 2;
+        }, 1000
+    )
+}
