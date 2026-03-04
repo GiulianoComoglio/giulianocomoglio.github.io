@@ -10,6 +10,7 @@ setInterval(
     () => {
         count = !count;
         text = texts[count];
+        div1.innerHTML = text;
     }, 1000
     
 );
