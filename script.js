@@ -8,7 +8,8 @@ let text = "";
 
 window.onload = setInterval(
     () => {
-        count = !count;
+        count += 1;
+        count = count % 2;
         text = texts[count];
         div1.innerHTML = text;
     }, 1000
