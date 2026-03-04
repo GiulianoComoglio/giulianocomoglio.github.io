@@ -11,6 +11,6 @@ while(1) {
     setTimeout(
         () => {
             div1.innerHTML = "prova"
-        }
+        }, 2000
     );
 };
