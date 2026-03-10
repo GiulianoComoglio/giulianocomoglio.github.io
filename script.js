@@ -6,7 +6,7 @@ let count = 0;
 
 let audio = new Audio(`https://cdn.freesound.org/previews/504/504819_9961300-lq.mp3`);
 
-audio.volume(0.1);
+audio.volume = 0.1;
 
 
 window.onload = setInterval(
