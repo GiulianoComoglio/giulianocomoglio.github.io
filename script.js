@@ -18,7 +18,7 @@ window.onload = setInterval(
     }, 1000
 );
 
-window.onscroll = setInterval(
+window.onclick = setInterval(
     () => {
         audioCount += 1;
         audioCount = audioCount % 2; 
