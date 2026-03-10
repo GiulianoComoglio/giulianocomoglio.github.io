@@ -7,8 +7,7 @@ let audioCount = 0;
 
 let audio = new Audio(`https://cdn.freesound.org/previews/504/504819_9961300-lq.mp3`);
 
-audio.volume = 0.1;
-
+let playVolume = 0.25;
 
 window.onload = setInterval(
     () => {
@@ -24,10 +23,12 @@ window.onscroll = setInterval(
         audioCount += 1;
         audioCount = audioCount % 2; 
         if (audioCount !=0) {
+            audio.volume = playVolume;
             audio.play();
         } else {
-            audio.pause();
+            audio.volume = 0;
+            audio.play();
         };
 
-    }, 1000
+    }, 4000
 )
