@@ -9,15 +9,6 @@ let audio = new Audio(`https://cdn.freesound.org/previews/504/504819_9961300-lq.
 
 let playVolume = 0.25;
 
-window.onload = setInterval(
-    () => {
-        count += 1;
-        count = count % 2; 
-        div1.innerHTML = texts[count];
-
-    }, 1000
-);
-
 window.onclick = setInterval(
     () => {
         audioCount += 1;
@@ -31,4 +22,13 @@ window.onclick = setInterval(
         };
 
     }, 4000
-)
+);
+
+window.onload = setInterval(
+    () => {
+        count += 1;
+        count = count % 2; 
+        div1.innerHTML = texts[count];
+
+    }, 1000
+);
